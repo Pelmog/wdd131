@@ -78,7 +78,7 @@ main {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-* Card Sizing */ .card-about-me,
+.card-about-me,
 .card-scotland {
     flex: 0 0 66%;
     /* Take up 2/3rd of the available width */
