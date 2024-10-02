@@ -1,0 +1,59 @@
+/* Import Google Font - Roboto
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+Apply Roboto font to the body
+body {
+  font-family: 'Roboto', sans-serif;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+Styles for header, main, and footer
+header, main, footer {
+  max-width: 640px;
+  margin: 1rem auto;
+  border: 1px solid #bbb;
+  padding: 1rem;
+  background-color: #e6f2ff; 
+}
+
+Main element should be a CSS grid with a single column and equal gap
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+Section element styling
+section {
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ddd; 
+} */
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  grid-template-columns: 1fr 1fr;
+}
+
+header, main, footer {
+  max-width: 640px;
+  margin: 1rem auto;
+  border: 1px solid #bbb;
+  padding: 1rem;
+  background-color: #e6f2ff;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+section {
+  padding: 1rem;
+  background-color: #fff;
+} 

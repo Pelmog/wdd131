@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #84dce8;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+header h1 {
+    order: 1;
+    color: royalblue;
+    font-weight: bold;
+}
+
+nav {
+    order: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: row;
+    padding: 1rem;
+}
+
+.hamburger {
+    font-size: 24px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #444;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu li a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: #fff;
+    background: #666;
+    border-radius: 4px;
+}
+
+.menu li a:hover {
+    background: #555;
+}
+
+main {
+    align-content: center;
+    padding: 1rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+main h2 {
+    grid-template-columns: 2fr;
+    display: grid;
+    text-align: center;
+    font-size: 28px;
+    color: black;
+    margin: 20px 0;
+}
+
+.temple-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+figure {
+    margin: 0;
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    background: #fff;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+footer {
+    background-color: #84dce8;
+    color: royalblue;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+
+#lastModified {
+    color: black;
+}
