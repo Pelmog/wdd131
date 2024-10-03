@@ -61,8 +61,8 @@ main {
     /* Add space between cards */
     justify-content: space-around;
     /* Space out items evenly */
-    max-width: 1200px;
-    margin: 0.5rem;
+    max-width: 100%;
+    margin: 0 auto;
     padding: 2rem;
 }
 
@@ -70,7 +70,7 @@ main {
 .card {
     flex: 1;
     /* Allow cards to grow and fill space */
-    max-width: 66%;
+    max-width: 100%;
     /* Control card width to maintain row alignment */
     background-color: #ffffff;
     /* White background for card */
@@ -81,17 +81,20 @@ main {
 
 .card-about-me,
 .card-scotland {
-    flex: 0 0 66%;
+    flex: 0 0 60%;
     /* Take up 2/3rd of the available width */
-    max-width: 66%;
+    max-width: 60%;
     /* Limit max width to 66% */
+    /* margin-right: 1%;*/
 }
 
-.card-resources {
-    flex: 0 0 33%;
-    /* Take up 1/3rd of the available width */
-    max-width: 33%;
-    /* Limit max width to 33% */
+.card-about-me {
+    width: 0 0 66%;
+    /* Ensure that both cards take up 48% of the width */
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Paragraph Text and Figcaption */
@@ -187,8 +190,17 @@ main {
 }
 
 /* Resources Card */
+
 .card-resources {
+    flex: 0 0 33%;
+    /* Take up 1/3rd of the available width */
+    max-width: 33%;
+    /* Limit max width to 33% */
+    background-color: #ffffff;
+    border: 1px solid #ccc;
     padding: 1rem;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    /* margin-left: 1%;*/
 }
 
 /* Specific card headings with colored padding */
@@ -197,7 +209,7 @@ main {
     color: #ffffff;
     padding: 9px;
     border-radius: 3px;
-    margin: -1rem -1rem 12rem -1rem;
+    margin: -1rem -1rem 10rem -1rem;
     /* Remove margin to align with card edge */
     text-align: center;
 }
@@ -251,6 +263,15 @@ footer {
     main {
         flex-direction: column;
         /* Stack items vertically on small screens */
+        flex-wrap: wrap;
+    }
+
+    card-about-me,
+    .card-resources {
+        width: 100%;
+        /* Full width for each card on smaller screens */
+        margin: 0.5rem 0;
+        /* Reduce margins for stacked layout */
     }
 
     .about-me-content {
