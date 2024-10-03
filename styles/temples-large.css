@@ -91,13 +91,13 @@
         font-size: 18px;
         font-weight: bold;
         padding: 1rem;
-        background-color: #004d8d;
-        color: white;
+        background-color: #84dce8;
+        color: royalblue
     }
 
 
     #lastModified {
-        color: yellow;
+        color: black;
     }
 
     footer p {
