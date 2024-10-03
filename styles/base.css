@@ -87,7 +87,7 @@ main {
 }
 
 .card-resources {
-    flex: 0 0 33%;
+    display: flex 0 0 33%;
     /* Take up 1/3rd of the available width */
     max-width: 33%;
     /* Limit max width to 33% */
