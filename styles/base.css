@@ -60,7 +60,7 @@ main {
     /* Add space between cards */
     justify-content: space-around;
     /* Space out items evenly */
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 2rem;
 }
@@ -87,7 +87,7 @@ main {
 }
 
 .card-resources {
-    display: flex 0 0 33%;
+    flex: 0 0 33%;
     /* Take up 1/3rd of the available width */
     max-width: 33%;
     /* Limit max width to 33% */
