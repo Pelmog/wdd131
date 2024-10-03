@@ -89,7 +89,7 @@ main {
 }
 
 .card-about-me {
-    width: 0 0 66%;
+    width: 66%;
     /* Ensure that both cards take up 48% of the width */
     background-color: #ffffff;
     border: 1px solid #ccc;
