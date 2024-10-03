@@ -54,6 +54,7 @@ nav ul li a:hover {
 main {
     display: flex;
     /* Use flexbox for row alignment */
+    justify-content: space-between;
     flex-wrap: wrap;
     /* Allow wrapping if needed */
     gap: 0.5em;
