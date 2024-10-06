@@ -219,7 +219,8 @@ main {
 }
 
 .card-resources li a {
-    color: #416df0;
+    color: #2658ed;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -228,7 +229,7 @@ main {
 }
 
 footer {
-    background-color: #89dee9;
+    background-color: #bcf1f8;
     color: royalblue;
     font-weight: bold;
     font-size: 18px;
