@@ -130,6 +130,7 @@ main {
     /* Control text width to balance with the image */
     text-align: justify;
     /* Justify the text for clean alignment */
+    color: black;
 }
 
 /* Scotland Section */
@@ -175,6 +176,7 @@ main {
 .scotland-text {
     max-width: 50%;
     text-align: justify;
+    color: black;
 }
 
 /* Resources Card */
@@ -226,7 +228,7 @@ main {
 }
 
 footer {
-    background-color: #84dce8;
+    background-color: #89dee9;
     color: royalblue;
     font-weight: bold;
     font-size: 18px;
