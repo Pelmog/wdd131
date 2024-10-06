@@ -21,7 +21,7 @@ h1 {
 
 /* Navigation Styles */
 nav {
-    background-color: #22b3c6;
+    background-color: #10a2b6;
     padding: 1em;
     border-radius: 0px;
     margin: 1rem -1rem -1rem -1rem;
@@ -103,7 +103,7 @@ main {
 
 /* Specific card headings with colored padding */
 .card-about-me h2 {
-    background-color: #22b3c6;
+    background-color: #10a2b6;
     color: #ffffff;
     padding: 9px;
     border-radius: 3px;
@@ -194,7 +194,7 @@ main {
 
 /* Specific card headings with colored padding */
 .card-resources h2 {
-    background-color: #22b3c6;
+    background-color: #10a2b6;
     color: #ffffff;
     padding: 9px;
     border-radius: 3px;
