@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Country by Kim Brown">
+    <meta name="author" content="Kim Brown">
+    <title>Temple Album - Kim Brown</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <!-- Default CSS for mobile-first styling -->
+    <link rel="stylesheet" href="styles/place.css" id="main-stylesheet">
+    <!-- CSS file for larger screens will be loaded dynamically -->
+    <link rel="stylesheet" href="styles/place-large.css" media="screen and (min-width: 768px)">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h3>Welcome to Italy</h3>
+    </header>
+    <main>
+        <section id="about">
+            <h2>Italy</h2>
+            <div class="country">
+                <figure>
+                    <img src="images/italy5.jpg" alt="Italy 5">
+                    <figcaption>
+                        <h2>Data</h2>
+                        <p>Area: 301,340 sq km</p>
+                        <p>Population: 58,968,501</p>
+                        <p>Capital: Rome</p>
+                        <p>Lanuaguas: Italian</p>
+                        <p>Currency: Euro</p>
+                        <p>Time Zone: UTC+1</p>
+                        <p>Calling Code: +39</p>
+                        <p>Internet TLD: .it</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <section id="weather">
+            <h2>Weather <span class="weather-icon">⛅</span></h2>
+            <p>Temperature: 10°C</p>
+            <p>Wind Speed: 5 km/h</p>
+            <p>Windchill Factor: <span id="windchill">N/A</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🇮🇹 Kim Brown 🇮🇹󠁧 Italy
+            🇮🇹</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

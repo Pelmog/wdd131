@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/* Global Variables */
+:root {
+    --primary-color: #ff6600;
+    /* Choose a color scheme */
+    --secondary-color: #333333;
+    --background-color: #ffffff;
+}
+
+body,
+html {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: "Roboto";
+    background-color: #84dce8;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+h3 {
+    order: 1;
+    color: royalblue;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.about h2 {
+    display: center;
+    text-align: center;
+    color: royalblue;
+    font-weight: bold;
+    font-size: 1.5rem
+}
+
+h2 {
+    display: flex;
+    align-items: centre;
+    color: royalblue;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Mobile View */
+main {
+    align-content: center;
+    padding: 1rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+.about {
+    max-width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about img {
+    width: 100%;
+    height: auto;
+}
+
+.weather-icon {
+    display: inline-block;
+}
+
+#weather {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+footer {
+    background-color: #84dce8;
+    color: royalblue;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+
+#lastModified {
+    color: black;
+}

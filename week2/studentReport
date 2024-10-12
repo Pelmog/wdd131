@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Report</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="studentReport.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Student Report and Day Names</h1>
+
+        <section id="student-report-section">
+            <h2>Student Report (Values Below 30)</h2>
+            <ul id="student-report"></ul>
+        </section>
+
+        <section id="days-section">
+            <h2>Next Days</h2>
+            <ul id="days-list"></ul>
+        </section>
+    </div>
+</body>
+
+</html>
