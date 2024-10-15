@@ -1,17 +1,19 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
     // JavaScript for Hamburger Menu Togglea.
-    const hamburger = document.querySelector(".hamburger");
-    const menu = document.querySelector("#menu");
-    const nav = document.guerySelector('#mainnav');
+    const mainNav = document.querySelector('.navigation');
+    const hamButton = document.querySelector('#menu');
 
     // Togggle the active class on click to shoe/ hide menu
-    hamburger.addEventListener("click", () => {
-        menu.classList.toggle("open");
-        hamburger.innerHTML = menu.classList.contains("open") ? "x" : "☰";
-        mainnav.classList.toggle('active');
-    /*hambutton.classList.toggle('show')*/;
+    hamButton.addEventListener('click', () => {
+        mainNav.classlist.toggle('show');
+        hamButton.classList.toggle('show');
+        // Update the hamburger button's text based on its state
+        if (hamButton.classList.contains('show')) {
+            hamButton.textContent = 'X'; // Close icon when menu is open
+        } else {
+            hamButton.textContent = '☰'; // Hamburger icon when menu is closed
+        }
     });
-
 
     // Dynamically set the current year in the footer
     const currentYear = new Date().getFullYear();
