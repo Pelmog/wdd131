@@ -31,6 +31,7 @@ nav {
 }
 
 .hamburger {
+    display: block;
     font-size: 1.5rem;
     font-weight: bold;
     background: none;
@@ -41,13 +42,22 @@ nav {
 
 
 .menu {
-    display: flex;
+    display: none;
+    flex-direction: column;
     list-style: none;
     padding: 0;
     margin: 0;
     background: none;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.menu.show {
+    display: flex;
+}
+
+.hamburger.active::before {
+    content: "X";
 }
 
 .menu li {

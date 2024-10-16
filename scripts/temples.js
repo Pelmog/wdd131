@@ -1,66 +1,37 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // JavaScript for Hamburger Menu Togglea.
-    const mainNav = document.querySelector('.navigation');
-    const hamButton = document.querySelector('#menu');
+// Wait for the DOM content to load before executing
+document.addEventListener('DOMContentLoaded', function () {
+    // Select the hamburger button and the menu
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
 
-    // Togggle the active class on click to shoe/ hide menu
-    hamButton.addEventListener('click', () => {
-        mainNav.classlist.toggle('show');
-        hamButton.classList.toggle('show');
-        // Update the hamburger button's text based on its state
-        if (hamButton.classList.contains('show')) {
-            hamButton.textContent = 'X'; // Close icon when menu is open
-        } else {
-            hamButton.textContent = '☰'; // Hamburger icon when menu is closed
-        }
+    // Add event listener for the hamburger menu toggle
+    menuToggle.addEventListener('click', function () {
+        // Toggle the 'show' class on the menu to reveal or hide it
+        menu.classList.toggle('show');
+
+        // Toggle the 'active' class on the hamburger button to change between hamburger and 'X'
+        menuToggle.classList.toggle('active');
     });
 
-    // Dynamically set the current year in the footer
-    const currentYear = new Date().getFullYear();
-    document.getElementById('currentyear').textContent = currentYear;
+    // Optional: Close the menu when a navigation link is clicked (good UX for small screens)
+    const navLinks = document.querySelectorAll('.navigation li a');
 
-    // Dynamically set the last modified date of the document
-    const lastModified = document.lastModified;
-    document.getElementById('lastModified').textContent = `Last modified: ${lastModified}`;
-
-    // Menu item click event listener
-    const menuItems = document.querySelectorAll('.menu li a');
-    const mainHeading = document.getElementById('main-heading');
-    const mainStylesheet = document.getElementById('main-stylesheet');
-
-    menuItems.forEach(item => {
-        item.addEventListener('click', (e) => {
-            e.preventDefault(); // Prevent the default anchor link behavior
-
-            const action = item.getAttribute('data-action');
-
-            switch (action) {
-                case 'home':
-                    mainHeading.textContent = "Temples of the World";
-                    loadCSS('styles/temples.css');
-                    break;
-                case 'old':
-                    mainHeading.textContent = "Old Temples";
-                    break;
-                case 'new':
-                    mainHeading.textContent = "New Temples";
-                    break;
-                case 'large':
-                    mainHeading.textContent = "Large Temples";
-                    loadCSS('styles/temples-large.css');
-                    break;
-                case 'small':
-                    mainHeading.textContent = "Small Temples";
-                    loadCSS('styles/temples.css'); // Revert to small screen CSS
-                    break;
-                default:
-                    mainHeading.textContent = "Temples of the World";
-            }
+    navLinks.forEach(link => {
+        link.addEventListener('click', function () {
+            // Hide the menu and change the 'X' back to the hamburger when a link is clicked
+            menu.classList.remove('show');
+            menuToggle.classList.remove('active');
         });
     });
+});
 
-    // Function to dynamically load a CSS file
-    function loadCSS(href) {
-        mainStylesheet.setAttribute('href', href);
-    }
-});    
+const currentYearElement = document.getElementById("currentyear");
+if (currentYearElement) {
+    currentYearElement.textContent = new Date().getFullYear();
+}
+
+// Display the last modified date in the footer.....
+const lastModifiedElement = document.getElementById("lastModified");
+if (lastModifiedElement) {
+    lastModifiedElement.textContent = `Last Modified: ${document.lastModified}`;
+}

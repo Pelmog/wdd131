@@ -86,6 +86,24 @@
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
     }
 
+    @media (min-width: 768px) {
+        .hamburger {
+            display: none;
+            /* Hide the hamburger on large screens */
+        }
+
+        .menu {
+            display: flex;
+            /* Show horizontal menu on large screens */
+            flex-direction: row;
+        }
+
+        .menu li {
+            display: block;
+            /* Ensure the menu items are displayed */
+        }
+    }
+
     /* Footer */
     footer {
         text-align: center;
