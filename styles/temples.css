@@ -37,7 +37,6 @@ nav {
     background: none;
     border: none;
     cursor: pointer;
-    display: block;
 }
 
 
@@ -132,7 +131,7 @@ nav {
     content: "X";
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 768px) {
 
     .navigation {
         display: flex;
@@ -206,17 +205,3 @@ footer {
 #lastModified {
     color: black;
 }
-
-
-/* #menu.active {
-    display: table-column;
-}*/
-
-/* Show the Hamburger Menu */
-/*.hamburger {
-        display: block;
-        font-size: 2rem;
-        background: none;
-        border: none;
-        cursor: pointer;
-    }*/
