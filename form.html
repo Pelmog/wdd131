@@ -4,14 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Review Form</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+    <meta name="description" content="WDD 131 - Web Fundamentals by Kim Brown, Web Development, JavaScript, CSS, HTML">
+    <meta name="author" content="Kim Brown">
+    <title>Review Confirmation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
-    <main class="container">
+    <header class="title-container">
         <h1>Product Review Form</h1>
+    </header>
+    <main class="container">
         <form method="get" action="review.html">
             <!-- Product Name -->
             <label for="product-name">Product Name</label>
@@ -68,10 +75,16 @@
             <!-- Submit Button -->
             <input type="submit" value="Submit Review">
         </form>
+        <h1>Thank You for Your Review!</h1>
+        <p>Your review has been submitted successfully.</p>
+        <p>Reviews Submitted: <span id="review-count">0</span></p>
+
     </main>
 
     <footer>
-        <p>© 2024 Product Reviews</p>
+        <p>&copy; <span id="currentyear"></span> 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Kim Brown 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Edinburgh,Scotland
+            🏴󠁧󠁢󠁳󠁣󠁴󠁿</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 

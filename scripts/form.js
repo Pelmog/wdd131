@@ -15,3 +15,22 @@ document.addEventListener("DOMContentLoaded", () => {
         selectElement.appendChild(option);
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    let reviewCount = localStorage.getItem("reviewCount") || 0;
+    reviewCount++;
+    localStorage.setItem("reviewCount", reviewCount);
+    document.getElementById("review-count").textContent = reviewCount;
+});
+
+// Dynamically set the current year in the footer......
+const currentYearElement = document.getElementById("currentyear");
+if (currentYearElement) {
+    currentYearElement.textContent = new Date().getFullYear();
+}
+
+// Display the last modified date in the footer.....
+const lastModifiedElement = document.getElementById("lastModified");
+if (lastModifiedElement) {
+    lastModifiedElement.textContent = `Last Modified: ${document.lastModified}`;
+}
