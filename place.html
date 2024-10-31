@@ -21,14 +21,18 @@
 <body>
     <header>
         <h1>Italy</h1>
+        <div class="header-strip"></div>
     </header>
     <main>
         <section class="place">
-            <figure>
-                <img src="images/italy5.jpg" alt="Italy 5">
-            </figure>
+            <picture>
+                <!-- Large JPEG image (italy6) for screens 768px and wider -->
+                <source srcset="images/italy6-large.jpg" media="(min-width: 768px)">
+                <!-- Small JPEG image (italy5) for smaller screens -->
+                <img src="images/italy5-small.jpg" alt="Scenic view of Italy" class="responsive-image">
+            </picture>
         </section>
-        <section class="data" <figcaption>
+        <section class="data">
             <h2>Data</h2>
             <p>Area: 301,340 sq km</p>
             <p>Population: 58,968,501</p>
@@ -41,11 +45,13 @@
             </figcaption>
             </figure>
         </section>
-        <section class="weather"></section>
-        <h2>Weather<span class="weather-icon">⛅</span></h2>
-        <p>Temperature: 10°C</p>
-        <p>Wind Speed: 5 km/h</p>
-        <p>Windchill Factor: <span id="windchill">N/A</span></p>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="weather-icon">⛅</div>
+            <p><span>Temperature: 10°C</p>
+            <p><span>Conditions: Partly Cloudy</p>
+            <p><span>Wind: 5 km/h</p>
+            <p><span>Wind Chill: 9.8°C</p>
         </section>
     </main>
     <footer>
