@@ -1,101 +1,95 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
-
+/* General Styles */
 body,
 html {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
+/* Header */
 header {
-    font-family: "Roboto";
+    text-align: center;
     background-color: #84dce8;
-    display: flex;
-    justify-content: space-evenly;
     padding: 1rem;
+    color: #1a1a1a;
 }
 
-h1 {
-    order: 1;
-    color: rgb(25, 78, 237);
-    font-weight: bold;
+header h1 {
+    margin: 0;
     font-size: 2rem;
 }
 
+/* Main Content */
 main {
-    align-content: center;
+    padding: 20px;
     display: flex;
-    padding: 1rem;
-    max-width: 600px;
-    margin: auto;
+    flex-direction: column;
+    align-items: center;
 }
 
-.about {
-    max-width: 100%;
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    padding: 1rem;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.about img {
+.place img {
     width: 100%;
     height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
-.country figcaption p {
-    align-content: center;
-    background-color: white;
+.data {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
 }
 
-h2 {
-    background-color: rgb(153, 241, 153);
-    /* Green background */
-    color: white;
-    /* White text color */
-    text-align: center;
-    /* Center text */
-    padding: auto;
-    /* Padding inside the heading */
-    border-radius: 5px;
-    /* Optional: rounded corners */
-    margin-bottom: 15px;
-    align-items: centre;
-    color: rgb(34, 81, 223);
-    font-weight: bold;
+.data h2 {
     font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+    text-align: center;
+}
+
+.data p {
+    margin: 5px 0;
+}
+
+/* Weather Section */
+.weather {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.weather h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1a1a1a;
 }
 
 .weather-icon {
-    display: inline-block;
+    font-size: 1.5rem;
+    margin-left: 5px;
 }
 
-.country #weather {
-    background-color: white;
-    /* White background for content */
-    text-align: center;
-    /* Center the content */
-    padding: 20px;
-    /* Padding inside the content box */
-    border-radius: 5px;
-    /* Optional: rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    /* Optional: slight shadow */
-}
-
-
+/* Footer */
 footer {
     background-color: #84dce8;
-    color: royalblue;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 1rem;
     text-align: center;
-    position: relative;
-    bottom: 0;
+    padding: 1rem;
+    color: #1a1a1a;
+    font-size: 0.9rem;
 }
 
 #lastModified {
-    color: black;
+    color: #333;
 }
