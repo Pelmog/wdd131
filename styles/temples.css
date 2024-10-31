@@ -17,17 +17,16 @@ header {
 }
 
 header h1 {
-    order: 1;
+    order: 2;
     color: royalblue;
     font-weight: bold;
 }
 
 nav {
-    order: 2;
+    order: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
 }
 
 .hamburger {

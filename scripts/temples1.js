@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const mainNav = document.querySelector('.navigation');
     const hamButton = document.querySelector('#menu');
 
-    // Togggle the active class on click to shoe/ hide menu
+    // Togggle the active class on click to show/ hide menu
     hamButton.addEventListener('click', () => {
         mainNav.classlist.toggle('show');
         hamButton.classList.toggle('show');
