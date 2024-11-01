@@ -2,10 +2,19 @@
 
 @media (min-width: 768px) {
 
+    body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
     /* Header */
 
-    header {
+    header,
+    footer {
         text-align: center;
+        width: 100%;
     }
 
     header h1 {
@@ -16,49 +25,42 @@
     /* Main Content */
     main {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 20px;
-        max-width: 1200px;
-        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 2000px;
+        position: relative;
     }
 
     .place {
-        position: relative;
         width: 100%;
-        height: 100%;
-        /* Full viewport height */
+        height: auto;
         overflow: hidden;
     }
 
     .place img {
         width: 100%;
-        height: 100%;
+        max-width: 2000px;
+        height: auto;
         object-fit: cover;
+        border-radius: 0;
+    }
+
+    /* Data Section */
+    .data {
+        width: 18%;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 10px;
         border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        top: 0;
+        text-align: left;
+        position: absolute;
+        top: 50px;
         left: 0;
         z-index: 1;
     }
 
-
-    /* Data Section */
-    .data {
-        width: 30%;
-        background-color: rgba(255, 255, 255, 0.9);
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        text-align: left;
-        position: absolute;
-        top: 50px;
-        left: 20px;
-    }
-
     .data h2 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         margin: 0;
         padding: 10px;
         background-color: #4caf50;
@@ -73,7 +75,7 @@
 
     /* Weather Section */
     .weather {
-        width: 30%;
+        width: 18%;
         background-color: rgba(255, 255, 255, 0.9);
         padding: 15px;
         border-radius: 8px;
@@ -81,11 +83,12 @@
         text-align: left;
         position: absolute;
         bottom: 20px;
-        right: 20px;
+        right: 0;
+        z-index: 2;
     }
 
     .weather h2 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         margin: 0;
         padding: 10px;
         background-color: #4caf50;
@@ -93,23 +96,23 @@
         border-radius: 5px;
         display: flex;
         align-items: center;
-        /*position: relative;*/
+    }
+
+    .weather-icon {
+        display: none;
     }
 
     /* Pseudo-Element for the Weather Icon */
     .weather h2::after {
         content: "⛅";
         font-size: 2rem;
-        margin-left: 10px;
+        margin-left: 8px;
         display: inline-block;
-        /*position: absolute;
-        right: 10px;
-        top: 50%;
-        transform: translateY(-50%);*/
     }
 
     .weather p {
         margin: 8px 0;
         font-weight: bold;
     }
+
 }
