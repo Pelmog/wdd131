@@ -69,7 +69,7 @@
         font-size: 1.5rem;
         margin: 0;
         padding: 10px;
-        background-color: var(--text-color);
+        background-color: var(--primary-color);
         color: var(--text-color);
         border-radius: 0 5px 2px 2px;
     }
@@ -97,7 +97,7 @@
         font-size: 1.5rem;
         margin: 0;
         padding: 10px;
-        background-color: ar(--primary-color);
+        background-color: var(--primary-color);
         color: var(--text-color);
         border-radius: 5px;
         display: flex;
