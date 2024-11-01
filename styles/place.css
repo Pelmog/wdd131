@@ -115,13 +115,10 @@ main {
     padding: 15px 0;
 }
 
-.weather-icon-mobile {
-    width: 50px;
-    /* Adjust the size as needed */
-    height: auto;
+.weather-icon {
+    font-size: 3rem;
     display: block;
     margin: 10px auto;
-    /* Center the icon */
 }
 
 .weather p {

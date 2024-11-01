@@ -3,8 +3,14 @@
 @media (min-width: 768px) {
 
     /* Header */
+
+    header {
+        text-align: center;
+    }
+
     header h1 {
         font-size: 3rem;
+        margin-bottom: 10px;
     }
 
     /* Main Content */
@@ -18,47 +24,92 @@
         margin: auto;
     }
 
-    .place img {
-        width: 60%;
-        border-radius: 8px;
+    .place {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        /* Full viewport height */
+        overflow: hidden;
     }
+
+    .place img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
 
     /* Data Section */
     .data {
         width: 30%;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         text-align: left;
+        position: absolute;
+        top: 50px;
+        left: 20px;
+    }
+
+    .data h2 {
+        font-size: 1.8rem;
         margin: 0;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border-radius: 0 5px 2px 2px;
+    }
+
+    .data p {
+        margin: 8px 0;
+        font-weight: bold;
     }
 
     /* Weather Section */
     .weather {
         width: 30%;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         text-align: left;
-        margin: 0;
-        position: relative;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
     }
 
     .weather h2 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin: 0;
         padding: 10px;
         background-color: #4caf50;
         color: white;
         border-radius: 5px;
-        position: relative;
+        display: flex;
+        align-items: center;
+        /*position: relative;*/
     }
 
     /* Pseudo-Element for the Weather Icon */
     .weather h2::after {
         content: "⛅";
-        /* Your weather icon */
         font-size: 2rem;
         margin-left: 10px;
         display: inline-block;
-        position: absolute;
+        /*position: absolute;
         right: 10px;
-        /* Adjust position as needed */
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-50%);*/
+    }
+
+    .weather p {
+        margin: 8px 0;
+        font-weight: bold;
     }
 }

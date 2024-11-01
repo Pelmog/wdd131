@@ -17,15 +17,20 @@ document.addEventListener("DOMContentLoaded", function () {
     // Display the calculated wind chill
     windChillElement.textContent = calculateWindChill(tempCelsius, windSpeedKmh);
 
-    // Set the current year in the footer
-    const currentYearElement = document.getElementById("currentyear");
-    if (currentYearElement) {
-        currentYearElement.textContent = new Date().getFullYear();
-    }
+    // Update footer with current year and last modified date
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = document.lastModified;
 
-    // Display the last modified date in the footer
-    const lastModifiedElement = document.getElementById("lastModified");
-    if (lastModifiedElement) {
-        lastModifiedElement.textContent = `Last Modified: ${document.lastModified}`;
-    }
 });
+
+// Set the current year in the footer
+const currentYearElement = document.getElementById("currentyear");
+if (currentYearElement) {
+    currentYearElement.textContent = new Date().getFullYear();
+}
+
+// Display the last modified date in the footer
+const lastModifiedElement = document.getElementById("lastModified");
+if (lastModifiedElement) {
+    lastModifiedElement.textContent = `Last Modified: ${document.lastModified}`;
+}
