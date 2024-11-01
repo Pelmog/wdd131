@@ -28,19 +28,20 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        max-width: 2000px;
+        max-width: 2500px;
         position: relative;
     }
 
     .place {
         width: 100%;
         height: auto;
+        max-width: 2500px;
         overflow: hidden;
     }
 
     .place img {
         width: 100%;
-        max-width: 2000px;
+        max-width: 2500px;
         height: auto;
         object-fit: cover;
         border-radius: 0;
