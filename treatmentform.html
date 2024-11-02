@@ -10,18 +10,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/form.css">
-    <script src="scripts/review.js" defer></script>
+    <link rel="stylesheet" href="styles/spform.css">
+    <script src="scripts/spinalflow.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
     <header class="title-container">
-        <h1>Product Review</h1>
+        <h1>Treatment Review</h1>
     </header>
     <main class="container">
-        <form method="get" action="review.html">
+        <form method="get" action="treatmentreview.html">
             <!-- Product Name -->
-            <label for="product-name">Product Name</label>
+            <label for="product-name">Spinal</label>
             <select id="product-name" name="product-name" required>
                 <option value="" disabled selected>Select a Product...</option>
             </select>
@@ -54,16 +55,16 @@
             <fieldset>
                 <legend>Which features did you find useful in the product? (Check all that apply)</legend>
                 <label>
-                    <input type="checkbox" name="feature" value="durability"> Durability
+                    <input type="checkbox" name="feature" value="tension release"> Tension Release
                 </label>
                 <label>
-                    <input type="checkbox" name="feature" value="design"> Design
+                    <input type="checkbox" name="feature" value="pain relief"> Pain Relief
                 </label>
                 <label>
-                    <input type="checkbox" name="feature" value="performance "> Performance
+                    <input type="checkbox" name="feature" value="mobility improvement"> Mobility
                 </label>
                 <label>
-                    <input type="checkbox" name="feature" value="application"> Ease of Use
+                    <input type="checkbox" name="feature" value="performance"> Well-being
                 </label>
             </fieldset>
 
