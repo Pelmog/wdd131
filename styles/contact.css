@@ -304,51 +304,18 @@ contact-form input[type="checkbox"] {
 .contact-form button:hover {
     background-color: #1ed233;
 }
-
 footer {
-    justify-content: space-evenly;
-    background-color: #d7733d;
-    ;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 1000;
-    text-align: right;
-    padding: 30px;
-    gap: 5rem;
+    background-color: rgb(156, 132, 154);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    gap: 5rem
 }
 
-footer p {
-    display: inline-flex;
-    margin-right: 3rem;
-}
-
-footer nav {
-    display: inline-flex;
-    justify-content: right;
-    gap: 15px;
-}
-
-footer nav a {
-    align-items: normal;
-    display: inline-block;
-    width: 50%;
-    text-decoration: none;
-    margin: 0 2px;
-    transition: transform 0.3s ease-in-out;
-}
-
-footer nav a:hover {
-    transform: scale(1.1);
-}
-
-footer nav img {
-    display: inline-flex;
-    border-radius: 50%;
-    border: 1px solid#ccc;
-    transition: transform 0.3s ease-in-out;
-    text-align: left;
-    width: 30px;
-    max-width: 50px;
-    height: auto;
-    text-decoration: none;
+#lastModified {
+    color: white;
 }
