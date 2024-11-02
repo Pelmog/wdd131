@@ -5,18 +5,22 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: black;
+    /*color: black;*/
 }
 
-header {
-    background-color: #ae57ae;
-    color: royalblue;
+/*header {
+    background-color: #cff3f7;
+    display: flex;
+    justify-content: space-evenly;
     padding: 1rem;
-}
+}*/
 
-h1 {
+header img {
+    background-color: rgb(196, 125, 177);
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
     margin: 0;
-    text-align: center;
 }
 
 /* Navigation Styles */
@@ -43,7 +47,6 @@ nav ul li a {
     font-size: 20px;
     color: white;
     text-decoration: none;
-    font-weight: bold;
 }
 
 nav ul li a:hover {
@@ -53,7 +56,7 @@ nav ul li a:hover {
 /* Main Layout */
 main {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     flex-wrap: wrap;
     gap: 0.5em;
     justify-content: space-around;
@@ -61,6 +64,7 @@ main {
     margin: 0 auto;
     padding: 2rem;
 }
+
 
 /* Individual Card Styles */
 .card {
@@ -103,7 +107,7 @@ main {
 
 /* Specific card headings with colored padding */
 .card-about-me h2 {
-    background-color: #10a2b6;
+    background-color: #8d4986;
     color: #ffffff;
     padding: 9px;
     border-radius: 3px;
@@ -138,7 +142,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 /* Figure styling to keep image and caption together */
@@ -188,13 +192,14 @@ main {
     /* Limit max width to 33% */
     background-color: #ffffff;
     border: 1px solid #ccc;
-    padding: 1rem;
+    padding-top: 0;
+    /*padding: 1rem;*/
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Specific card headings with colored padding */
 .card-resources h2 {
-    background-color: #10a2b6;
+    background-color: #8d4986;
     color: #ffffff;
     padding: 9px;
     border-radius: 3px;
@@ -203,26 +208,26 @@ main {
     text-align: center;
 }
 
-.card-resources-text,
-.card-resources-figcaption {
-    display: center;
-    color: black;
+
+.card-resources p {
+    margin-top: 0;
+    padding-top: 0;
+    /* Remove top margin to reduce space */
 }
 
 .card-resources img {
-    align-items: center;
     display: block;
     margin-right: 10px;
     /* Create a gap between the image and text */
     width: 100%;
 }
 
-#topSpace {
-    margin-top: 100px;
-}
+/*#topSpace {
+    margin-top: 10px;
+}*/
 
 /* Styling for links within .card */
-.card-resources ul {
+/*.card-resources ul {
     padding-left: 20px;
 }
 
@@ -240,7 +245,7 @@ main {
 
 .card-resources li a:hover {
     text-decoration: underline;
-}
+}*/
 
 footer {
     background-color: #bcf1f8;
