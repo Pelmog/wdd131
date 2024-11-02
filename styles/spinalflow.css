@@ -30,10 +30,11 @@ nav ul {
     justify-content: center;
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    margin: 0px 90px;
+    margin: 0px 20px;
 }
 
 nav ul li a {
@@ -240,3 +241,68 @@ footer {
     color: white;
 }
 
+/*Responsive Design Adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .card {
+        max-width: 100%;
+        /* Full width on smaller screens */
+    }
+
+    main {
+        flex-direction: column;
+        /* Stack items vertically on small screens */
+        flex-wrap: wrap;
+    }
+
+    card-about-me,
+    .card-resources {
+        width: 100%;
+        /* Full width for each card on smaller screens */
+        margin: 0.5rem 0;
+        /* Reduce margins for stacked layout */
+    }
+
+    .about-me-content {
+        flex-direction: column;
+        /* Stack items vertically on small screens */
+        align-items: center;
+        /* Center items */
+    }
+
+    .scotland-content {
+        flex-direction: column;
+        /* Stack content in columns on small screens */
+    }
+
+    .about-me-img {
+        margin: 0 auto 10px auto;
+        /* Center image and add spacing below it */
+        max-width: 45%;
+        /* Increase image size for better visibility on small screens */
+    }
+
+    .scotland-img {
+        margin: 0 auto;
+        /* Center images */
+        max-width: 45%;
+    }
+
+    .about-me-text {
+        max-width: 100%
+            /* Full width for text on small screens */
+    }
+
+    .scotland-text {
+        max-width: 100%;
+        /* Full width for text on small screens */
+    }
+}
