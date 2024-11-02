@@ -5,11 +5,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #416df0;
+    color: black;
 }
 
 header {
-    background-color: #84dce8;
+    background-color: #ae57ae;
     color: royalblue;
     padding: 1rem;
 }
@@ -22,7 +22,7 @@ h1 {
 /* Navigation Styles */
 nav {
     background-color: #10a2b6;
-    padding: 1em;
+    padding: 1rem;
     border-radius: 0px;
     margin: 1rem -1rem -1rem -1rem;
 }
@@ -35,7 +35,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 90px;
+    margin: 0px 90px;
 }
 
 nav ul li a {
@@ -203,6 +203,20 @@ main {
     text-align: center;
 }
 
+.card-resources-text,
+.card-resources-figcaption {
+    display: center;
+    color: black;
+}
+
+.card-resources img {
+    align-items: center;
+    display: block;
+    margin-right: 10px;
+    /* Create a gap between the image and text */
+    width: 100%;
+}
+
 #topSpace {
     margin-top: 100px;
 }
@@ -219,7 +233,7 @@ main {
 }
 
 .card-resources li a {
-    color: #2658ed;
+    color: black;
     font-weight: bold;
     text-decoration: none;
 }
