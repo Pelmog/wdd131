@@ -16,6 +16,37 @@ body {
     margin-bottom: 20px;
 }
 
+/* Navigation Styles */
+.title-container nav {
+    background-color: #8d4986;
+    padding: 1em;
+    border-radius: 0px;
+    margin: 1rem -1rem -1rem -1rem;
+}
+
+.title-container nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.title-container nav ul li {
+    margin: 0 90px;
+}
+
+.title-container nav ul li a {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.title-container nav ul li a:hover {
+    text-decoration: underline;
+}
+
 footer {
     background-color: rgb(156, 132, 154);
     color: white;
