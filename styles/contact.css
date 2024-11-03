@@ -27,6 +27,7 @@ body {
 }
 
 header {
+    max-width: 100%;
     background-color: rgb(196, 125, 177);
     color: white;
     padding: 1rem;
@@ -117,7 +118,7 @@ footer {
     text-align: center;
     font-size: 3rem;
     Background-color: rgba(244, 243, 239, 0.912);
-    color:  rgb(133, 33, 163);
+    color: rgb(133, 33, 163);
 }
 
 .company-info h2 {
@@ -156,8 +157,7 @@ footer {
     text-align: center;
     margin: 10px 0;
     grid-row: 2/2;
-    color: #d7733d;
-    ;
+    color:  rgb(133, 33, 163);
 }
 
 figure img {
@@ -228,7 +228,9 @@ contact-form input[type="checkbox"] {
 .contact-form button:hover {
     background-color: #1ed233;
 }
+
 footer {
+    max-width: 100%;
     background-color: rgb(156, 132, 154);
     color: white;
     font-weight: bold;
