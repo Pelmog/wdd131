@@ -17,12 +17,9 @@
     }
 
     /* Navigation Menu for large screens */
-    nav {
+    
+    .nav {
         order: 1;
-        display: block; /* Ensure the nav is visible on large screens */
-    }
-
-    .menu {
         display: flex; /* Horizontal layout */
         flex-direction: row;
         list-style: none;
@@ -30,21 +27,30 @@
         margin: 0;
     }
 
-    .menu li {
-        margin: 0 10px; /* Add spacing between menu items */
+    .nav ul {
+        list-style: none;
+        flex-direction: row;
+        display: flex;  
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .nav ul li {
+        margin: 0 10px; /* Add spacing between nav items */
     }
 
-    .menu li a {
+    .nav ul li a {
         padding: 15px 30px;
         font-size: 1.2rem;
-        color: #004d8d;
+        color: royalblue;
         background: white;
         border-radius: 8px;
         border: 1px solid #ccc;
         transition: background 0.3s ease, color 0.3s ease;
     }
 
-    .menu li a:hover {
+    .nav ul li a:hover {
         background: #004d8d;
         color: white;
     }
