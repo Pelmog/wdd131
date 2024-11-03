@@ -1,0 +1,121 @@
+@media (min-width: 768px) {
+
+    /* Header Styles for large screens */
+    header {
+        text-align: left;
+        background-color: #84dce8;
+        display: flex;
+        justify-content: space-between;
+        /* Space between h1 and nav */
+        align-items: center;
+        /* Vertically center the items */
+    }
+
+    header h1 {
+        order: 2;
+        color: #004d8d;
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    /* Navigation Menu for large screens */
+    nav {
+        order: 1;
+        display: block;
+        /* Ensure the nav is visible on large screens */
+    }
+
+    .menu {
+        display: flex;
+        /* Horizontal layout */
+        flex-direction: row;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu li {
+        margin: 0 10px;
+        /* Add spacing between menu items */
+    }
+
+    .menu li a {
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        color: #004d8d;
+        background: white;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .menu li a:hover {
+        background: #004d8d;
+        color: white;
+    }
+
+    /* Hide the hamburger icon on large screens */
+    .hamburger {
+        display: none;
+    }
+}
+
+* Main Content for large screens */ main {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+/* Temple Gallery - Three columns for large screens */
+.temple-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+figure {
+    margin: 0;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 0.5rem;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+figure:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 1rem;
+    background-color: #84dce8;
+    color: royalblue;
+}
+
+#lastModified {
+    color: black;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}

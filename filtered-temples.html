@@ -14,8 +14,9 @@
     <!-- Default CSS for mobile-first styling -->
     <link rel="stylesheet" href="styles/temples.css" id="main-stylesheet">
     <!-- CSS file for larger screens will be loaded dynamically -->
-    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 768px)">
-    <script src="scripts/temples.js" defer></script>
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 768px)">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
@@ -34,56 +35,7 @@
     </header>
     <main>
         <h2>Home</h2>
-        <div class="temple-gallery">
-            <figure>
-                <img src="images/rome.webp" alt="Temple 1">
-                <figcaption>Rome Italy</figcaption>
-            </figure>
-            <figure>
-                <img src="images/washingtondc.webp" alt="Temple 2">
-                <figcaption>Wasington D.C.</figcaption>
-            </figure>
-            <figure>
-                <img src="images/kona.webp" alt="Temple 3">
-                <figcaption>Kona Hawaii</figcaption>
-            </figure>
-            <figure>
-                <img src="images/preston.webp" alt="Temple 4">
-                <figcaption>Preston</figcaption>
-            </figure>
-            <figure>
-                <img src="images/saltlake.webp" alt="Temple 5">
-                <figcaption>Salt Lake</figcaption>
-            </figure>
-            <figure>
-                <img src="images/palmyra.webp" alt="Temple 6">
-                <figcaption>Palmyra</figcaption>
-            </figure>
-            <figure>
-                <img src="images/london.webp" alt="Temple 7">
-                <figcaption>London</figcaption>
-            </figure>
-            <figure>
-                <img src="images/nauvoo.webp" alt="Temple 8">
-                <figcaption>Navuoo</figcaption>
-            </figure>
-            <figure>
-                <img src="images/paris.webp" alt="Temple 9">
-                <figcaption>Paris</figcaption>
-            </figure>
-            <figure>
-                <img src="images/winterquarters.webp" alt="Temple 7">
-                <figcaption>Nabraska</figcaption>
-            </figure>
-            <figure>
-                <img src="images/winnipeg.webp" alt="Temple 8">
-                <figcaption>Winnipeg</figcaption>
-            </figure>
-            <figure>
-                <img src="images/johannesburg.jpg" alt="Temple 9">
-                <figcaption>Johannesburg</figcaption>
-            </figure>
-        </div>
+        <div class="temple-gallery"></div>
     </main>
     <footer>
         <p>&copy; <span id="currentyear"></span> 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Kim Brown 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Edinburgh, Scotland
