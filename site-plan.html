@@ -5,11 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Web Fundamentals by Kim Brown, Web Development, JavaScript, CSS, HTML">
+    <meta name="author" content="Kim Brown">
     <title>Final Project: Site Plan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/getdates.js" defer></script>
     <style>
         /* Example CSS for the color schema */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto', sans-serif;
             background-color: #f4f4f4;
             /* Light background for readability */
             color: #333;
@@ -19,12 +26,12 @@
         h1,
         h2,
         h3 {
-            color: #2a7bc2;
+            color:  #f4f4f4,
             /* Headings color */
         }
 
         .accent {
-            color: #f97306;
+            color:  rgb(156, 132, 154);
             /* Accent color for highlights */
         }
     </style>
@@ -37,36 +44,34 @@
     </header>
 
     <section>
-        <h2>Site Name</h2>
+        <h2>Spinal Flow</h2>
         <p><strong>Name:</strong> [Insert Site Name]</p>
-        <p>Description of the site name, its purpose, and relevance to the project. If a domain is available, list it as
-            an optional reference.</p>
+        <p>Spinal Flow Therapy is a holistic healing modality that focuses on releasing tension, stress, and blockages within the spine and nervous system. By using gentle, specific touch, this therapy aims to restore optimal nerve flow and promote the body’s natural ability to heal itself. It helps improve overall well-being by aligning the body's physical, emotional, and energetic states.</p>
     </section>
 
     <section>
         <h2>Site Purpose</h2>
-        <p>Outline the main purpose of the site. For instance, providing resources, facilitating membership
-            interactions, or showcasing specific services related to your project topic.</p>
+        <p>Spinal Flow Therapy is a holistic healing modality that focuses on releasing tension, stress, and blockages within the spine and nervous system. By using gentle, specific touch, this therapy aims to restore optimal nerve flow and promote the body’s natural ability to heal itself. It helps improve overall well-being by aligning the body's physical, emotional, and energetic states.</p>
     </section>
 
     <section>
         <h2>Scenarios</h2>
         <ul>
-            <li>Scenario 1: [Detailed question from the target audience]</li>
-            <li>Scenario 2: [Another relevant visitor question or concern]</li>
+            <li>Scenario 1: What is Spinal Flow Therapy?</li>
+            <li>Scenario 2: Who can benefit from Spinal Flow Therapy?</li>
         </ul>
     </section>
 
     <section>
         <h2>Color Schema</h2>
-        <p><strong>Primary Color:</strong> #2a7bc2 (for headings and links)</p>
-        <p><strong>Accent Color:</strong> #f97306 (for buttons, icons, and highlights)</p>
+        <p><strong>Primary Color:</strong> #f4f4f4 for headings and links)</p>
+        <p><strong>Accent Color:</strong> : #8d4986, #4169E1,(for buttons, icons, and highlights)</p>
         <p>These colors ensure the site is visually appealing and user-friendly.</p>
     </section>
 
     <section>
         <h2>Typography</h2>
-        <p><strong>Primary Font:</strong> Arial, sans-serif (for main text and headings)</p>
+        <p><strong>Primary Font:</strong> Roboto, sans-serif (for main text and headings)</p>
         <p>Provide a clean and consistent reading experience across the site.</p>
     </section>
 
@@ -88,7 +93,9 @@
     </section>
 
     <footer>
-        <p>Created by: Kim Brown</p>
+        <p>&copy; <span id="currentyear"></span> 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Kim Brown 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Edinburgh, Scotland
+            🏴󠁧󠁢󠁳󠁣󠁴󠁿</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 
