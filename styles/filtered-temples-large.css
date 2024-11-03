@@ -51,7 +51,27 @@
 
     /* Hide the hamburger icon on large screens */
     .hamburger {
-        display: none;
+        display: block;
+    }
+
+    .nav {
+        display: none; /* Hide nav menu initially */
+        flex-direction: column;
+        align-items: center;
+        background-color: #84dce8;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        padding: 20px 0;
+    }
+
+    .nav.show {
+        display: flex; /* Show nav menu when toggled */
+    }
+
+    hamburger.active::before {
+        content: "X"; /* Change to "X" when active */
     }
 
     /* Main Content for large screens */

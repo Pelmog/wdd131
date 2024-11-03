@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/temples.css" id="main-stylesheet">
     <!-- CSS file for larger screens will be loaded dynamically -->
     <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 768px)">
+    <script src="scripts/temples.js" defer></script>
     <script src="scripts/filtered-temples.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
 </head>
@@ -22,8 +23,8 @@
 <body>
     <header>
         <h1>Temple Album</h1>
-        <a id="menu" href="#"></a>
-        <nav>
+        <button class="hamburger">&#9776;</button> <!-- Hamburger icon -->
+        <nav class="nav">
             <ul class="navigation">
                 <li><a href="#" data-action="home">Home</a></li>
                 <li><a href="#" data-action="old">Old</a></li>
@@ -42,6 +43,13 @@
             🏴󠁧󠁢󠁳󠁣󠁴󠁿</p>
         <p id="lastModified"></p>
     </footer>
+    <script>
+        // JavaScript to toggle the navigation menu and hamburger icon
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav').classList.toggle('show');
+        });
+    </script>
 </body>
 
 </html>

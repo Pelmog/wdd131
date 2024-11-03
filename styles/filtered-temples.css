@@ -10,11 +10,13 @@ html {
 
 /* Header Styling */
 header {
-    background-color: #bbb; /* Mobile header color */
+    background-color: #84dce8;
+    color: royalblue;
     display: flex;
     align-items: center;
-    justify-content: center;
+    text-align: center;
     padding: 20px;
+    position: relative;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -25,52 +27,62 @@ header h1 {
     margin: 0;
 }
 
+/* Hamburger Menu (Hidden by Default on Large Screens) */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+/* Navigation Menu */
+nav {
+    width: 100%;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    margin: 0 15px;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #004d8d;
+    padding: 10px 15px;
+    transition: color 0.3s, background 0.3s;
+}
+
+.navigation a:hover {
+    background-color: #004d8d;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+.active {
+    color: yellow; /* Highlight active link */
+}
+
+
 main {
     margin: 0 auto;
     align-content: center;
     padding: 1rem;
     max-width: 600px;
 }
-
-/* Mobile Navigation */
-nav {
-    background-color: #36454f; /* Dark background for contrast */
-    margin: 0 auto;
-    max-width: 800px;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: overline; /* Underline effect for hover */
-}
-
-.active {
-    color: yellow; /* Highlight active link */
-}
-
-/* Hamburger Menu */
-.hamburger {
-    display: block;
-    font-size: 1.5rem;
-    font-weight: bold;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
 .menu {
     display: none;
     flex-direction: column;
@@ -82,33 +94,10 @@ nav a:hover {
     flex-wrap: wrap;
 }
 
-.menu.show {
-    display: flex;
-}
-
 .hamburger.active::before {
     content: "X";
 }
 
-.menu li {
-    margin: 0 10px;
-}
-
-.menu li a {
-    display: block;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 20px;
-    color: #fff;
-    background: #ddd;
-    border-radius: 4px;
-    transition: background 0.3s ease, color 0.3s ease;
-}
-
-.menu li a:hover {
-    background: #004d8d;
-    color: white;
-}
 
 /* Hide menu button by default */
 #menu {
